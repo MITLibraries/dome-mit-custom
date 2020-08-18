@@ -251,7 +251,7 @@
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <xsl:value-of
-                                            select="concat($context-path, '/internal-item?itemID=', $identifier)"/>
+                                            select="concat($context-path, '/handle/', $identifier)"/>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:attribute>
