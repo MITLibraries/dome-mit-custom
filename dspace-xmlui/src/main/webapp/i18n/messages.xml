@@ -2204,10 +2204,15 @@
 	<message key="xmlui.dri2xhtml.METS-1.0.item-author">Creator</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-abstract">Abstract</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-description">Description</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-genre">Genre</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-uri">URI</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-date">Date</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-ispartof">Item is Part of</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-publisher">Publisher</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-subject">Subject</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-rights">Rights</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-rights-access">Rights Statement</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-worktype">Type of Work</message>
 
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-head">Files in this item</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-file">Files</message>
@@ -2252,7 +2257,7 @@
 	<message key="xmlui.dri2xhtml.METS-1.0.header-qdc-elements">Dublin Core elements</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.header-qdc-terms">Dublin Core terms</message>
 
-        <message key="xmlui.dri2xhtml.METS-1.0.blocked">Blocked</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.blocked">Blocked</message>
 
 
 	<!-- Special pioneer model related text, wherever it might end up -->
