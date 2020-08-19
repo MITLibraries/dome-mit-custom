@@ -2208,11 +2208,13 @@
 	<message key="xmlui.dri2xhtml.METS-1.0.item-uri">URI</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-date">Date</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-ispartof">Item is Part of</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-based-on">Item is Based on</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-publisher">Publisher</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-subject">Subject</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-rights">Rights</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-rights-access">Rights Statement</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-worktype">Type of Work</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-identifier">Identifier</message>
 
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-head">Files in this item</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-file">Files</message>
@@ -2222,6 +2224,8 @@
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-view">View</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-description">Description</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">View/<wbr/>Open</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-files-download">Download</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-files-alternate">Alternate file</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-no-files">There are no files associated with this item.</message>
 
 	<message key="xmlui.dri2xhtml.METS-1.0.size-bytes">bytes</message>
