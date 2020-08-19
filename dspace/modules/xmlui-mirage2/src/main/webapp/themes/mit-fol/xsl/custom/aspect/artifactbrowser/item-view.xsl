@@ -458,9 +458,6 @@
 
     <xsl:template name="itemSummaryView-DIM-authors">
         <div class="simple-item-view-authors item-page-field-wrapper table">
-            <h5>
-                <i18n:text>xmlui.dri2xhtml.METS-1.0.item-author</i18n:text>
-            </h5>
             <xsl:choose>
                 <xsl:when test="dim:field[@element='contributor'][@qualifier='author' or not(@qualifier)]">
                     <xsl:variable name="author-total" select="count(dim:field[@element='contributor'][@qualifier='author' or not(@qualifier)])"/>
