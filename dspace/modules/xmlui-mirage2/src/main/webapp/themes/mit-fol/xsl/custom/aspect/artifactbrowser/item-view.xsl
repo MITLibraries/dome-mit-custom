@@ -618,95 +618,71 @@
                                 </img>
                             </xsl:otherwise>
                         </xsl:choose>
+                        <div class="text-center word-break">
+                            <xsl:attribute name="title">
+                                <xsl:value-of select="mets:FLocat[@LOCTYPE='URL']/@xlink:title"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="util:shortenString(mets:FLocat[@LOCTYPE='URL']/@xlink:title, 30, 5)"/>
+                        </div>
                     </a>
                 </div>
             </div>
 
-            <div class="col-xs-6 col-sm-7">
-                <dl class="file-metadata dl-horizontal">
-                    <dt>
-                        <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-name</i18n:text>
-                        <xsl:text>:</xsl:text>
-                    </dt>
-                    <dd class="word-break">
-                        <xsl:attribute name="title">
-                            <xsl:value-of select="mets:FLocat[@LOCTYPE='URL']/@xlink:title"/>
-                        </xsl:attribute>
-                        <xsl:value-of select="util:shortenString(mets:FLocat[@LOCTYPE='URL']/@xlink:title, 30, 5)"/>
-                    </dd>
-                    <!-- File size always comes in bytes and thus needs conversion -->
-                    <dt>
-                        <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-size</i18n:text>
-                        <xsl:text>:</xsl:text>
-                    </dt>
-                    <dd class="word-break">
-                        <xsl:choose>
-                            <xsl:when test="@SIZE &lt; 1024">
-                                <xsl:value-of select="@SIZE"/>
-                                <i18n:text>xmlui.dri2xhtml.METS-1.0.size-bytes</i18n:text>
-                            </xsl:when>
-                            <xsl:when test="@SIZE &lt; 1024 * 1024">
-                                <xsl:value-of select="substring(string(@SIZE div 1024),1,5)"/>
-                                <i18n:text>xmlui.dri2xhtml.METS-1.0.size-kilobytes</i18n:text>
-                            </xsl:when>
-                            <xsl:when test="@SIZE &lt; 1024 * 1024 * 1024">
-                                <xsl:value-of select="substring(string(@SIZE div (1024 * 1024)),1,5)"/>
-                                <i18n:text>xmlui.dri2xhtml.METS-1.0.size-megabytes</i18n:text>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:value-of select="substring(string(@SIZE div (1024 * 1024 * 1024)),1,5)"/>
-                                <i18n:text>xmlui.dri2xhtml.METS-1.0.size-gigabytes</i18n:text>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </dd>
+            <div class="col-xs-6 col-sm-3">
+                <!-- File size always comes in bytes and thus needs conversion -->
+                <div class="word-break">
+                    <xsl:choose>
+                        <xsl:when test="@SIZE &lt; 1024">
+                            <xsl:value-of select="@SIZE"/>
+                            <i18n:text>xmlui.dri2xhtml.METS-1.0.size-bytes</i18n:text>
+                        </xsl:when>
+                        <xsl:when test="@SIZE &lt; 1024 * 1024">
+                            <xsl:value-of select="substring(string(@SIZE div 1024),1,5)"/>
+                            <i18n:text>xmlui.dri2xhtml.METS-1.0.size-kilobytes</i18n:text>
+                        </xsl:when>
+                        <xsl:when test="@SIZE &lt; 1024 * 1024 * 1024">
+                            <xsl:value-of select="substring(string(@SIZE div (1024 * 1024)),1,5)"/>
+                            <i18n:text>xmlui.dri2xhtml.METS-1.0.size-megabytes</i18n:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="substring(string(@SIZE div (1024 * 1024 * 1024)),1,5)"/>
+                            <i18n:text>xmlui.dri2xhtml.METS-1.0.size-gigabytes</i18n:text>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3">
+                <div class="word-break">
                     <!-- Lookup File Type description in local messages.xml based on MIME Type.
-             In the original DSpace, this would get resolved to an application via
-             the Bitstream Registry, but we are constrained by the capabilities of METS
-             and can't really pass that info through. -->
-                    <dt>
-                        <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-format</i18n:text>
-                        <xsl:text>:</xsl:text>
-                    </dt>
-                    <dd class="word-break">
-                        <xsl:call-template name="getFileTypeDesc">
-                            <xsl:with-param name="mimetype">
-                                <xsl:value-of select="substring-before(@MIMETYPE,'/')"/>
-                                <xsl:text>/</xsl:text>
-                                <xsl:choose>
-                                    <xsl:when test="contains(@MIMETYPE,';')">
-                                        <xsl:value-of select="substring-before(substring-after(@MIMETYPE,'/'),';')"/>
-                                    </xsl:when>
-                                    <xsl:otherwise>
-                                        <xsl:value-of select="substring-after(@MIMETYPE,'/')"/>
-                                    </xsl:otherwise>
-                                </xsl:choose>
+                     In the original DSpace, this would get resolved to an application via
+                     the Bitstream Registry, but we are constrained by the capabilities of METS
+                     and can't really pass that info through. -->
+                    <xsl:call-template name="getFileTypeDesc">
+                        <xsl:with-param name="mimetype">
+                            <xsl:value-of select="substring-before(@MIMETYPE,'/')"/>
+                            <xsl:text>/</xsl:text>
+                            <xsl:choose>
+                                <xsl:when test="contains(@MIMETYPE,';')">
+                                    <xsl:value-of select="substring-before(substring-after(@MIMETYPE,'/'),';')"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="substring-after(@MIMETYPE,'/')"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
 
-                            </xsl:with-param>
-                        </xsl:call-template>
-                    </dd>
-                    <!-- Display the contents of 'Description' only if bitstream contains a description -->
-                    <xsl:if test="mets:FLocat[@LOCTYPE='URL']/@xlink:label != ''">
-                        <dt>
-                            <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-description</i18n:text>
-                            <xsl:text>:</xsl:text>
-                        </dt>
-                        <dd class="word-break">
-                            <xsl:attribute name="title">
-                                <xsl:value-of select="mets:FLocat[@LOCTYPE='URL']/@xlink:label"/>
-                            </xsl:attribute>
-                            <xsl:value-of select="util:shortenString(mets:FLocat[@LOCTYPE='URL']/@xlink:label, 30, 5)"/>
-                        </dd>
-                    </xsl:if>
-                    <xsl:if test="@EMBARGODATE">
-                        <dt>
-                            <i18n:text>xmlui.dri2xhtml.METS-embargo-until</i18n:text>
-                        </dt>
-                        <dd class="word-break">
-                            <xsl:value-of select="@EMBARGODATE"/>
-                        </dd>
-                    </xsl:if>
-
-                </dl>
+                        </xsl:with-param>
+                    </xsl:call-template>
+                </div>
+                <!-- Display the contents of 'Description' only if bitstream contains a description -->
+                <xsl:if test="mets:FLocat[@LOCTYPE='URL']/@xlink:label != ''">
+                    <div class="word-break">
+                        <xsl:attribute name="title">
+                            <xsl:value-of select="mets:FLocat[@LOCTYPE='URL']/@xlink:label"/>
+                        </xsl:attribute>
+                        <xsl:value-of select="util:shortenString(mets:FLocat[@LOCTYPE='URL']/@xlink:label, 30, 5)"/>
+                    </div>
+                </xsl:if>
             </div>
 
             <div class="file-link col-xs-6 col-xs-offset-6 col-sm-2 col-sm-offset-0">
@@ -718,6 +694,14 @@
                         <xsl:call-template name="view-open"/>
                     </xsl:otherwise>
                 </xsl:choose>
+                <xsl:if test="@EMBARGODATE">
+                    <dt>
+                        <i18n:text>xmlui.dri2xhtml.METS-embargo-until</i18n:text>
+                    </dt>
+                    <dd class="word-break">
+                        <xsl:value-of select="@EMBARGODATE"/>
+                    </dd>
+                </xsl:if>
             </div>
         </div>
 
