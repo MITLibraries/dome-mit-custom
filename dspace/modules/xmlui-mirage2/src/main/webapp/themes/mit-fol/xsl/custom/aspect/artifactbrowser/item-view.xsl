@@ -643,9 +643,18 @@
     <xsl:template name="itemSummaryView-DIM-alternative-title">
         <xsl:if test="dim:field[@element='title' and @qualifier='alternative']">
             <div class="simple-item-view-alternative-title item-page-field-wrapper">
-                <h5>
-                    <i18n:text>xmlui.dri2xhtml.METS-1.0.item-alternative-title</i18n:text>
-                </h5>
+                <xsl:choose>
+                    <xsl:when test="count(dim:field[@element='title' and @qualifier='alternative']) > 1">
+                        <h5>
+                            <i18n:text>xmlui.dri2xhtml.METS-1.0.item-alternative-titles</i18n:text>
+                        </h5>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <h5>
+                            <i18n:text>xmlui.dri2xhtml.METS-1.0.item-alternative-title</i18n:text>
+                        </h5>
+                    </xsl:otherwise>
+                </xsl:choose>
                 <xsl:for-each select="dim:field[@element='title' and @qualifier='alternative']">
                     <div>
                         <xsl:copy-of select="node()"/>

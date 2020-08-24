@@ -2201,6 +2201,8 @@
 
 	<message key="xmlui.dri2xhtml.METS-1.0.item-preview">Preview</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-title">Title</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-alternative-title">Alternative Title</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-alternative-titles">Alternative Titles</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-author">Creator</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-abstract">Abstract</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-description">Description</message>
