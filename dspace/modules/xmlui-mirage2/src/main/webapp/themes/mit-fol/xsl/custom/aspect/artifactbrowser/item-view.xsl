@@ -352,6 +352,7 @@
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-terms">
+        <!-- Please note the mismatch here between using "terms" in the template and the metadata value of "rights" -->
         <xsl:if test="dim:field[@element='rights' and (not(@qualifier) or @qualifier='uri')]">
             <div class="simple-item-view-terms item-page-field-wrapper">
                 <h5>
@@ -364,6 +365,18 @@
                             <xsl:copy-of select="dim:field[@element='rights' and @qualifier='uri']"/>
                         </a>
                     </xsl:if>
+                </div>
+            </div>
+        </xsl:if>
+        <xsl:if test="dim:field[@element='rights' and @qualifier='access']">
+            <div class="simple-item-view-terms item-page-field-wrapper">
+                <h5>
+                    <i18n:text>xmlui.dri2xhtml.METS-1.0.item-rights-access</i18n:text>
+                </h5>
+                <div>
+                    <xsl:for-each select="dim:field[@element='rights' and @qualifier='access']">
+                        <xsl:copy-of select="node()"/>
+                    </xsl:for-each>
                 </div>
             </div>
         </xsl:if>

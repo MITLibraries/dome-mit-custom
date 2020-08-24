@@ -2213,6 +2213,7 @@
 	<message key="xmlui.dri2xhtml.METS-1.0.item-based-on">Item is Based on</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-publisher">Publisher</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-subject">Subject</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-terms">Rights</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-rights">Rights</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-rights-access">Rights Statement</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-worktype">Type of Work</message>
