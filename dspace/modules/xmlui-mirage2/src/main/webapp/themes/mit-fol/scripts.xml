@@ -39,9 +39,8 @@
     <script src="scripts/vendor-extensions.js">&#160;</script>
     <script src="scripts/google-stats-dates.js">&#160;</script>
     <script src="scripts/templates.js">&#160;</script>
-    <script src="scripts/mit-effects.js">&#160;</script>
     <script src="scripts/flaggingstep.js">&#160;</script>
-    <script src="scripts/mit-effects.js">&#160;</script>
+    <script src="scripts/featured-collections.js">&#160;</script>
     <script src="scripts/workflow-overview.js">&#160;</script>
     <script src="scripts/bitstream-license.js">&#160;</script>
     <script src="scripts/most-popular.js">&#160;</script>

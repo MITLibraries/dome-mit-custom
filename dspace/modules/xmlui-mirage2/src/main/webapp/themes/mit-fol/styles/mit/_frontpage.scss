@@ -1,0 +1,13 @@
+// front page styles
+
+#featured_collections {
+	li.list-group-item {
+		background: none;
+		border: none;
+		padding-left: 0;
+
+		span.collection {
+			font-size: 18px;
+		}
+	}
+}
