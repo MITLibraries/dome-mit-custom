@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "dependencies": {
     "bootstrap-sass": "3.3.0",
-    "datatables": "1.10.5",
+    "datatables": "1.10.12",
     "font-awesome": "4.2.0",
     "geostats": "1.5.0",
     "handlebars": "4.0.11",
