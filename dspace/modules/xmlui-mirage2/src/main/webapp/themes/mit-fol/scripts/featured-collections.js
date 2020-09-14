@@ -1,6 +1,21 @@
 $(function () {
 
-    console.log('Loading featured collections...');
+    // Augment each selected collection with its logo information.
+    function getLogo( collection ) {
+        endpoint = 'https://dome6-stage.mitlib.net' + collection.link + '?expand=logo';
+        jQuery.get( endpoint )
+            .done(renderLogo)
+            .fail(function() {
+                console.error( "Error loading logo for a collection..." );
+            })
+    };
+
+    // Finds the placeholder logo element and drops the 
+    function renderLogo( data ) {
+        if(data.logo) {
+            jQuery( "#" + data.uuid ).prepend( '<img src="' + data.logo.retrieveLink + '" alt="logo for data.name" class="collection-logo" ><br>' );
+        }
+    };
 
     // Fisher-Yates (Knuth) Shuffle implementation
     // from https://github.com/Daplie/knuth-shuffle/blob/master/index.js
@@ -39,7 +54,8 @@ $(function () {
         list = document.createElement("ul");
         jQuery(list).addClass("list-group");
         jQuery.each(selected, function( index, value ) {
-            jQuery(list).append('<li class="list-group-item"><span class="collection"><a href="/handle/' + value.handle + '">' + value.name + "</a></span> (" + value.numberItems + " items)<br>" + value.shortDescription + "</li>");
+            jQuery(list).append('<li class="list-group-item col-xs-12 col-sm-6"><a id="' + value.uuid + '" href="/handle/' + value.handle + '"><span class="collection">' + value.name + "</a></span><br>(" + value.numberItems + " items)<br>" + value.shortDescription + "</li>");
+            getLogo( value );
         });
         jQuery(featuredList).append(list);
     };
@@ -47,7 +63,7 @@ $(function () {
     // Create empty container
     var featuredList = document.createElement("div"),
         featuredEndpoint = "/rest/collections";
-    jQuery(featuredList).addClass("featured-collections");
+    jQuery(featuredList).addClass("featured-collections").addClass("clearfix");
     jQuery("#featured_collections").append(jQuery(featuredList));
 
     // Retrieve list of collections and display a random selection
