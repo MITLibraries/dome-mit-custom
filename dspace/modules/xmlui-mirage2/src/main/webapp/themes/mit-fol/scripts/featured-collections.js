@@ -2,7 +2,7 @@ $(function () {
 
     // Augment each selected collection with its logo information.
     function getLogo( collection ) {
-        endpoint = 'https://dome6-stage.mitlib.net' + collection.link + '?expand=logo';
+        endpoint = collection.link + '?expand=logo';
         jQuery.get( endpoint )
             .done(renderLogo)
             .fail(function() {
