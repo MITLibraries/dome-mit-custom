@@ -4,6 +4,7 @@
 <div id="featured.collections" n="collections" rend="primary">
 	<head>Featured Collections</head>
 </div>
+<div id="link.to.all"><xref target="/community-list">See all communities and collections</xref></div>
 </body>
 <options/>
 <meta>
