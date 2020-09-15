@@ -133,6 +133,15 @@ dl {
     display: none;
 }
 
+.file-list {
+    .file-wrapper {
+        margin-bottom: 20px;
+
+        .thumbnail {
+            margin-bottom: 0;
+        }
+    }
+}
 
 footer {
    hr {

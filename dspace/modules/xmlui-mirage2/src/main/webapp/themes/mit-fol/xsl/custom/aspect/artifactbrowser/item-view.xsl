@@ -608,7 +608,7 @@
     <xsl:template match="mets:file">
         <xsl:param name="context" select="."/>
         <div class="file-wrapper row">
-            <div class="col-xs-6 col-sm-3">
+            <div class="col-xs-3">
                 <div class="thumbnail">
                     <a class="image-link">
                         <xsl:attribute name="href">
@@ -644,7 +644,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-6 col-sm-3">
+            <div class="col-xs-3">
                 <!-- File size always comes in bytes and thus needs conversion -->
                 <div class="word-break">
                     <xsl:choose>
@@ -668,7 +668,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-6 col-sm-3">
+            <div class="col-xs-3">
                 <div class="word-break">
                     <!-- Lookup File Type description in local messages.xml based on MIME Type.
                      In the original DSpace, this would get resolved to an application via
@@ -701,7 +701,7 @@
                 </xsl:if>
             </div>
 
-            <div class="file-link col-xs-6 col-xs-offset-6 col-sm-2 col-sm-offset-0">
+            <div class="file-link col-xs-3">
                 <xsl:choose>
                     <xsl:when test="@ADMID">
                         <xsl:call-template name="display-rights"/>
