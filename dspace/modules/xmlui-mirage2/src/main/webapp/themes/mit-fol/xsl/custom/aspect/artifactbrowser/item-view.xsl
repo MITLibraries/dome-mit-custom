@@ -539,45 +539,70 @@
     <xsl:template name="itemSummaryView-DIM-authors">
         <div class="simple-item-view-authors item-page-field-wrapper table">
             <xsl:choose>
-                <xsl:when test="dim:field[@element='contributor'][@qualifier='author' or not(@qualifier)]">
-                    <xsl:variable name="author-total" select="count(dim:field[@element='contributor'][@qualifier='author' or not(@qualifier)])"/>
-                    <xsl:for-each select="dim:field[@element='contributor'][@qualifier='author' or not(@qualifier)]">
-                        <xsl:call-template name="itemSummaryView-DIM-authors-entry">
-                            <xsl:with-param name="index" select="position()"/>
-                        </xsl:call-template>
-                        <xsl:if test="count(following-sibling::dim:field[@element='contributor'][@qualifier='author' or not(@qualifier)]) != 0">
-                            <span>
-                                <xsl:attribute name="class">
-                                    <xsl:text>author-spacer-list-</xsl:text>
-                                    <xsl:value-of select="position()+1"/>
-
-                                    <xsl:if test="position()+1 &gt; $author-limit and $author-limit &gt; 0">
-                                        <xsl:text> hidden </xsl:text>
-                                    </xsl:if>
-                                </xsl:attribute>
-                                <xsl:text>;&#160;</xsl:text>
-                            </span>
+                <xsl:when test="dim:field[@element='contributor'][@qualifier='display']">
+                    <xsl:for-each select="dim:field[@element='contributor'][@qualifier='display']">
+                        <span>
+                            <xsl:if test="@authority">
+                                <xsl:attribute name="class"><xsl:text>ds-dc_contributor_author-authority</xsl:text></xsl:attribute>
+                            </xsl:if>
+                            <xsl:copy-of select="node()"/>
+                        </span>
+                        <xsl:if test="count(following-sibling::dim:field[@element='contributor'][@qualifier='display']) != 0">
+                            <xsl:text>; </xsl:text>
                         </xsl:if>
                     </xsl:for-each>
-                    <xsl:if test="$author-total &gt; $author-limit and $author-limit &gt; 0">
-                        <span id="item-view-authors-truncated">
-                            <xsl:text>; ...</xsl:text>
-                        </span>
-                        <span>
-                            <xsl:text>&#160;</xsl:text>
-                        </span>
-                        <span>
-                            <a id="item-view-show-all-authors-link" href="#" onClick="showAuthors(); return false;">Show
-                                more
-                            </a>
-                            <a id="item-view-hide-authors-link" href="#" onClick="hideAuthors(); return false;"
-                               class="hidden">Show less
-                            </a>
-                        </span>
-                    </xsl:if>
                 </xsl:when>
                 <xsl:otherwise>
-                    <i18n:text>xmlui.dri2xhtml.METS-1.0.no-author</i18n:text>
+                    <xsl:choose>
+                        <xsl:when test="dim:field[@element='contributor'][@qualifier='author' or not(@qualifier)]">
+                            <xsl:variable name="author-total" select="count(dim:field[@element='contributor'][@qualifier='author' or not(@qualifier)])"/>
+                            <xsl:for-each select="dim:field[@element='contributor'][@qualifier='author' or not(@qualifier)]">
+                                <xsl:call-template name="itemSummaryView-DIM-authors-entry">
+                                    <xsl:with-param name="index" select="position()"/>
+                                </xsl:call-template>
+                                <xsl:if test="count(following-sibling::dim:field[@element='contributor'][@qualifier='author' or not(@qualifier)]) != 0">
+                                    <span>
+                                        <xsl:attribute name="class">
+                                            <xsl:text>author-spacer-list-</xsl:text>
+                                            <xsl:value-of select="position()+1"/>
+
+                                            <xsl:if test="position()+1 &gt; $author-limit and $author-limit &gt; 0">
+                                                <xsl:text> hidden </xsl:text>
+                                            </xsl:if>
+                                        </xsl:attribute>
+                                        <xsl:text>;&#160;</xsl:text>
+                                    </span>
+                                </xsl:if>
+                            </xsl:for-each>
+                            <xsl:if test="$author-total &gt; $author-limit and $author-limit &gt; 0">
+                                <span id="item-view-authors-truncated">
+                                    <xsl:text>; ...</xsl:text>
+                                </span>
+                                <span>
+                                    <xsl:text>&#160;</xsl:text>
+                                </span>
+                                <span>
+                                    <a id="item-view-show-all-authors-link" href="#" onClick="showAuthors(); return false;">Show
+                                        more
+                                    </a>
+                                    <a id="item-view-hide-authors-link" href="#" onClick="hideAuthors(); return false;"
+                                       class="hidden">Show less
+                                    </a>
+                                </span>
+                            </xsl:if>
+                        </xsl:when>
+                        <xsl:when test="dim:field[@element='creator']">
+                            <xsl:for-each select="dim:field[@element='creator']">
+                                <xsl:copy-of select="node()"/>
+                                <xsl:if test="count(following-sibling::dim:field[@element='creator']) != 0">
+                                    <xsl:text>; </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <i18n:text>xmlui.dri2xhtml.METS-1.0.no-author</i18n:text>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:otherwise>
             </xsl:choose>
         </div>
