@@ -93,7 +93,7 @@
     <!-- Note: As of DSpace 6.0, org.dspace.app.xmlui.aspect.artifactbrowser.AdvancedSearch has been removed. -->
     <!-- The following "type_*" i18n keys will be left as is as they're referenced by the Discovery's SidebarFacetsTransformer
          but in future, they should be refactored to a more relevant key prefix -->
-    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_author">Author</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_author">Creator</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_title">Title</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_subject">Subject</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_abstract">Abstract</message>
@@ -127,7 +127,7 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.sort_by"> Sort by: </message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.order"> Order: </message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.rpp"> Results: </message><!-- /Page -->
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.etal"> Authors/Item: </message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.etal"> Creators/Item: </message>
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.etal.all">All</message>
 
@@ -138,11 +138,11 @@
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.order.asc">ascending</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.order.desc">descending</message>
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading">Authors Name</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading">Creators Name</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading">Subject</message>
 
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.author">Browsing {0} by Author {1}</message>
-	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.author">Browsing {0} by Author</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.author">Browsing {0} by Creator {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.author">Browsing {0} by Creator</message>
 
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.subject">Browsing {0} by Subject {1}</message>
 	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.subject">Browsing {0} by Subject</message>
@@ -183,7 +183,7 @@
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.full_text_search">Search within this collection:</message>
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.head_browse">Browse by</message>
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.browse_titles">Titles</message>
-	<message key="xmlui.ArtifactBrowser.CollectionViewer.browse_authors">Authors</message>
+	<message key="xmlui.ArtifactBrowser.CollectionViewer.browse_authors">Creators</message>
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.browse_dates">Dates</message>
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.advanced_search_link">Advanced Search</message>
 	<message key="xmlui.ArtifactBrowser.CollectionViewer.head_recent_submissions">Recent Submissions</message>
@@ -200,7 +200,7 @@
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.full_text_search">Search within this community and its collections:</message>
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_browse">Browse by</message>
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.browse_titles">Titles</message>
-	<message key="xmlui.ArtifactBrowser.CommunityViewer.browse_authors">Authors</message>
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.browse_authors">Creators</message>
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.browse_dates">Dates</message>
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.advanced_search_link">Advanced Search</message>
 	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_communities">Sub-communities within this community</message>
@@ -249,7 +249,7 @@
 	<message key="xmlui.ArtifactBrowser.Navigation.head_all_of_dspace">All of Dome</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.communities_and_collections">Communities &amp; Collections</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_title">Titles</message>
-	<message key="xmlui.ArtifactBrowser.Navigation.browse_author">Authors</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_author">Creators</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_subject">Subjects</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_dateissued">By Issue Date</message>
 	<message key="xmlui.ArtifactBrowser.Navigation.browse_dateaccessioned">By Submit Date</message>
@@ -335,16 +335,16 @@
 	<message key="xmlui.ArtifactBrowser.ItemRequestSent.title">Your request has been sent.</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestSent.trail">Your request has been sent.</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestSent.head">Your request has been sent.</message>
-	<message key="xmlui.ArtifactBrowser.ItemRequestSent.para1">Your request has been sent to the author or responsible person.</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestSent.para1">Your request has been sent to the creator or responsible person.</message>
 
 	<!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestResponseDecisionForm.java -->
 	<message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.title">Document copy request</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.trail">Document copy request</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.head">Document copy request</message>
-	<message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.para1">IF YOU ARE THE AUTHOR (OR AN AUTHOR) OF DOCUMENT "{0}" use the buttons to answer the user's request.</message>
+	<message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.para1">IF YOU ARE THE CREATOR (OR A CREATOR) OF DOCUMENT "{0}" use the buttons to answer the user's request.</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.para2">This repository will propose an appropriate model reply, which you may edit.</message>
     <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.contactRequester">Initial reply to requester</message>
-    <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.contactAuthor"> Author permission request</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.contactAuthor"> Creator permission request</message>
     <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.send">Send copy</message>
 	<message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.dontSend">Don't send copy</message>
 
@@ -1707,7 +1707,7 @@
 	<message key="xmlui.administrative.mapper.SearchItemForm.submit_map">Map selected items</message>
 	<message key="xmlui.administrative.mapper.SearchItemForm.column1"></message>
 	<message key="xmlui.administrative.mapper.SearchItemForm.column2">Collection</message>
-	<message key="xmlui.administrative.mapper.SearchItemForm.column3">Author</message>
+	<message key="xmlui.administrative.mapper.SearchItemForm.column3">Creator</message>
 	<message key="xmlui.administrative.mapper.SearchItemForm.column4">Title</message>
 
 	<!-- org.dspace.app.xmlui.administrative.mapper.BrowseItemForm -->
@@ -1717,7 +1717,7 @@
 	<message key="xmlui.administrative.mapper.BrowseItemForm.submit_unmap">Unmap selected items</message>
 	<message key="xmlui.administrative.mapper.BrowseItemForm.column1"></message>
 	<message key="xmlui.administrative.mapper.BrowseItemForm.column2">Collection</message>
-	<message key="xmlui.administrative.mapper.BrowseItemForm.column3">Author</message>
+	<message key="xmlui.administrative.mapper.BrowseItemForm.column3">Creator</message>
 	<message key="xmlui.administrative.mapper.BrowseItemForm.column4">Title</message>
 	<message key="xmlui.administrative.mapper.BrowseItemForm.no_remove">You need the REMOVE privilege on this collection to be able to unmap items from this collection.</message>
 
@@ -2191,7 +2191,7 @@
 	<!-- DS-METS-1.0-QDC.xsl -->
 	<message key="xmlui.dri2xhtml.METS-1.0.no-preview">No preview available</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.no-title">Untitled</message>
-	<message key="xmlui.dri2xhtml.METS-1.0.no-author">Unknown author</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.no-author">Unknown creator</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.non-conformant">
 		This is not a Dome object conformant to the METS 1.0 profile and as such cannot be
         rendered effectively. You can override either the template that handles the general
@@ -2201,13 +2201,23 @@
 
 	<message key="xmlui.dri2xhtml.METS-1.0.item-preview">Preview</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-title">Title</message>
-	<message key="xmlui.dri2xhtml.METS-1.0.item-author">Author</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-alternative-title">Alternative Title</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-alternative-titles">Alternative Titles</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-author">Creator</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-abstract">Abstract</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-description">Description</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-genre">Genre</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-uri">URI</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-date">Date</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-ispartof">Item is Part of</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-based-on">Item is Based on</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-publisher">Publisher</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-subject">Subject</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-terms">Rights</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-rights">Rights</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-rights-access">Rights Statement</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-worktype">Type of Work</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-identifier">Identifier</message>
 
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-head">Files in this item</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-file">Files</message>
@@ -2217,6 +2227,8 @@
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-view">View</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-description">Description</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">View/<wbr/>Open</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-files-download">Download</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-files-alternate">Alternate file</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-no-files">There are no files associated with this item.</message>
 
 	<message key="xmlui.dri2xhtml.METS-1.0.size-bytes">bytes</message>
@@ -2252,14 +2264,14 @@
 	<message key="xmlui.dri2xhtml.METS-1.0.header-qdc-elements">Dublin Core elements</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.header-qdc-terms">Dublin Core terms</message>
 
-        <message key="xmlui.dri2xhtml.METS-1.0.blocked">Blocked</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.blocked">Blocked</message>
 
 
 	<!-- Special pioneer model related text, wherever it might end up -->
 	<message key="xmlui.dri2xhtml.pioneer.preview">Preview</message>
 	<message key="xmlui.dri2xhtml.pioneer.date">Date</message>
 	<message key="xmlui.dri2xhtml.pioneer.title">Title</message>
-	<message key="xmlui.dri2xhtml.pioneer.author">Author</message>
+	<message key="xmlui.dri2xhtml.pioneer.author">Creator</message>
 
 	<!-- tag used to handle the empty textarea tag added 09/28/2006 -->
 	<message key="xmlui.dri2xhtml.default.textarea.value"> </message>
@@ -2385,7 +2397,7 @@
   <message key="xmlui.mobile.search_all">Search ALL</message>
   <message key="xmlui.mobile.browse_all">Browse ALL by</message>
   <message key="xmlui.mobile.browse_date">Date</message>
-  <message key="xmlui.mobile.browse_author">Author</message>
+  <message key="xmlui.mobile.browse_author">Creator</message>
   <message key="xmlui.mobile.browse_title">Title</message>
   <message key="xmlui.mobile.browse_subject">Subject</message>
   <message key="xmlui.mobile.related_google_scholar">Related</message>
@@ -2499,7 +2511,7 @@
     <!-- org.dspace.app.xmlui.Submission.submit.StartSubmissionLookupStep -->
     <message key="xmlui.Submission.submit.StartSubmissionLookupStep.submit_lookup">Search</message>
     <message key="xmlui.Submission.submit.StartSubmissionLookupStep.title">Publication Search</message>
-    <message key="xmlui.Submission.submit.StartSubmissionLookupStep.lookup_help">Fill in a publication ID, DOI, Title or Author and then press "Search".  A list of all matching publications will be shown to you to select in order to proceed with the submission process.</message>
+    <message key="xmlui.Submission.submit.StartSubmissionLookupStep.lookup_help">Fill in a publication ID, DOI, Title or Creator and then press "Search".  A list of all matching publications will be shown to you to select in order to proceed with the submission process.</message>
     <message key="xmlui.Submission.submit.StartSubmissionLookupStep.submit_publication_item">Imported publication Record</message>
     <message key="xmlui.Submission.submit.progressbar.lookup">Lookup</message>
 

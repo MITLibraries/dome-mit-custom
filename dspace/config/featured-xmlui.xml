@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <document xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" version="1.1">
 <body>
-<div id="file.news.div.news" n="news" rend="primary">
-	<head>Featured communities and collections</head>
-	<p>This is where we would highlight various collections and communities from around the Dome collection. There are several options for maintaining this content:</p>
-	<ul>
-		<li>Add the content directly to news-xmlui.xml</li>
-		<li>Create new feature XML in the config directory</li>
-		<li>Build something like an aspect within DSpace for curation without deploy</li>
-		<li>Set up an external content source that can loaded via API</li>
-		<li>Some other option</li>
-	</ul>
+<div id="featured.collections" n="collections" rend="primary">
+	<head>Featured Collections</head>
 </div>
+<div id="link.to.all"><xref target="/community-list">See all communities and collections</xref></div>
 </body>
 <options/>
 <meta>

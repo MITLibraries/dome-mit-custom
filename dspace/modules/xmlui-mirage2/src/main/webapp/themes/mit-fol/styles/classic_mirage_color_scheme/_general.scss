@@ -109,6 +109,10 @@ dl {
             overflow: hidden;
             text-overflow: ellipsis;
         }
+
+        .simple-item-view-authors {
+            font-size: 20px;
+        }
     }
 }
 
@@ -129,6 +133,15 @@ dl {
     display: none;
 }
 
+.file-list {
+    .file-wrapper {
+        margin-bottom: 20px;
+
+        .thumbnail {
+            margin-bottom: 0;
+        }
+    }
+}
 
 footer {
    hr {
