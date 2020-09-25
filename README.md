@@ -3,8 +3,7 @@
 This repository holds only the files necessary to change a stock DSpace
 application into the Dome platform maintained by the MIT Libraries.
 
-These files are meant to be unzipped on top of a stock DSpace v6.4 codebase.
-
+These files are meant to be unzipped on top of a stock DSpace 6.4 codebase.
 
 ## Local development
 
@@ -49,3 +48,27 @@ The theme for this application, `mit-fol`, is based on the MIT Libraries'
 design system. Where possible, we should copy the stylesheets from that system
 without alteration, and then store customizations in the basic `_style.scss`
 file.
+
+## Local development
+
+This is a rough approximation of what runs in production. Always check on the
+dev1/staging server before promoting to production. We intend this to only be used
+for testing theme changes, and larger work might benefit from a separate development
+process.
+
+At the start of your dev session:
+
+- `docker-compose up`
+- `make sync`
+
+Any time you make changes you want to see:
+
+- `make sync`
+
+If you broke things really bad and need to reset:
+
+- delete your docker volumes and dspace container
+
+## Future enhancements
+
+- document how to load test data
