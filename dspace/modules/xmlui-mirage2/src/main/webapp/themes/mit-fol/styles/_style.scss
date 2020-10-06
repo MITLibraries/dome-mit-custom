@@ -226,3 +226,21 @@ hr.collection-separator {
 #aspect_statistics_StatletTransformer_div_statswrapper .panel-body {
     padding: 0;
 }
+
+.wrap-footer {
+    a {
+        text-decoration: none;
+
+        &:hover,
+        &:active,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+}
+
+.wrap-outer-footer-institute {
+    a {
+       text-decoration: underline;
+    }
+}
