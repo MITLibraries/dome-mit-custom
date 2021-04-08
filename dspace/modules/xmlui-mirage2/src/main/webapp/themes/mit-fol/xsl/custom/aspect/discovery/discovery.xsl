@@ -211,7 +211,7 @@
         </xsl:variable>
 
         <xsl:variable name="metsDoc" select="document($externalMetadataUrl)"/>
-        <div class="row ds-artifact-item">
+        <div class="row ds-artifact-item smoke-a">
             <xsl:if test="$thumbnails = 'true'">
                 <div class="col-sm-3 hidden-xs">
                     <xsl:apply-templates select="$metsDoc/mets:METS/mets:fileSec" mode="artifact-preview">
