@@ -156,6 +156,10 @@
         <!-- <theme name="Test Theme 1" handle="123456789/1" path="theme1/"/>    -->
         <!-- <theme name="Test Theme 2" regex="community-list" path="theme2/"/> -->
 
+        <theme name="Mirage2" handle="1721.3/74802" path="Mirage2/" />
+        <theme name="Mirage2" handle="1721.3/74803" path="Mirage2/" />
+        <theme name="Mirage2" handle="1721.3/74804" path="Mirage2/" />
+
         <!-- Everything else gets the new FoL theme -->
         <theme name="Future of Libraries Theme" regex=".*" path="mit-fol/" />
 
