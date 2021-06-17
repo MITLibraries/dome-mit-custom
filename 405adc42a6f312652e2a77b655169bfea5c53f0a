@@ -1,0 +1,6 @@
+This re-installs the out-of-the-box DSpace 6.* Mirage2 discovery.xsl (.../dspace/modules/xmlui-mirage2/src/main/webapp/themes/mit-fol/xsl/custom/aspect/discovery/discovery.xsl) to display thumbnails to search results in the Atmire derived mit-fol theme.
+
+Configuration change (local.cfg):
+An entry for xmlui.user.registration of false, which should disable the Register link from the bottom of the right sidebar
+
+The Jira ticket for this work is INFRA-92
