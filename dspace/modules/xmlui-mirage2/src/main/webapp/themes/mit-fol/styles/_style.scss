@@ -244,3 +244,8 @@ hr.collection-separator {
        text-decoration: underline;
     }
 }
+
+/* Overriding the malformed breadcrumb characters in _bootstrap_variables.scss */
+.breadcrumb>li+li:before {
+  content: '>';
+}
