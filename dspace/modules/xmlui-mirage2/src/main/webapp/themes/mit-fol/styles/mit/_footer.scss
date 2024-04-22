@@ -7,7 +7,7 @@
 }
 
 .wrap-footer {
-    background: $black url('#{$image-path}/vi-shape7-tp.svg') no-repeat 10% center;
+    background: $black url('https://cdn.mitlibrary.net/files/branding/local/vi-shape7-tp.svg') no-repeat 10% center;
 
   a {
     @extend %link;
@@ -48,40 +48,6 @@
     @extend .list-inline-pipe;
     font-size: $fs-small;
   }
-
-  .wrap-social {
-
-    p, a {
-      display: inline-block;
-      vertical-align: middle;
-      margin-left: .5rem;
-      margin-bottom: 0;
-      text-transform: uppercase;
-      font-size: $fs-xsmall;
-    }
-
-    svg {
-      height: 2em;
-      width: 2em;
-      border-radius: 50%;
-      padding: 0.2em;
-      background: $white none repeat scroll 0 0;
-
-      path {
-        fill: $gray-d1;      
-      }
-    }
-  }
-}
-
-// footer - adjustments for slim
-.wrap-footer.footer-slim {
-
-  .sitemap-libraries-abbrev a {
-    @extend .list-inline-pipe;
-    font-size: $fs-small;
-  }
-
 }
 
 // MIT footer
@@ -93,7 +59,7 @@
   .footer-info-institute {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: start;
   }
 
   a {
@@ -106,27 +72,8 @@
     }
   }
 
-  .link-logo-mit {
-
-    .logo-mit {
-      fill: $gray-l2;
-
-      .color {
-        fill: $white;
-      }
-    }
-  }
-
-  .about-mit {
-    color: $gray-l3;
-    margin-right: 4%;
-    text-transform: uppercase;
-    white-space: nowrap;
-  }
-
   .license {
-    margin-left: auto;
-    margin-top: 1rem;
     color: $gray-l3;
+    margin-left: 2em;
   }
 }

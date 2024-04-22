@@ -14,7 +14,7 @@
     <script src="node_modules/jquery-ui-dist/jquery-ui.min.js">&#160;</script>
     <script src="node_modules/handlebars/dist/handlebars.js">&#160;</script>
     <script src="node_modules/holderjs/holder.js">&#160;</script>
-    <!--<script src="node_modules/bootstrap-sass/assets/javascripts/bootstrvi-shape7-tp.svgap/affix.js">&#160;</script>-->
+    <!--<script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap/affix.js">&#160;</script>-->
     <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap/alert.js">&#160;</script>
     <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap/button.js">&#160;</script>
     <!--<script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap/carousel.js">&#160;</script>-->
