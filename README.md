@@ -16,6 +16,15 @@ Local development is best done via Docker, using this general workflow:
 3. Follow the [standard Docker workflow](https://github.com/DSpace/DSpace/tree/dspace-6_x/dspace/src/main/docker-compose) for building and starting the
    application. It will appear by default at [localhost:8080/xmlui](localhost:8080/xmlui).
 
+## Deploying to development or production
+
+The process for deploying a branch to the development tier is:
+
+1. Push the branch to this repository.
+2. Create a release on the branch, whose value will be used during the deploy
+   process.
+3. Contact the InfraEng team, letting them know that a deploy is needed.
+
 ## Theme
 
 The theme for this application, `mit-fol`, is based on the MIT Libraries'
