@@ -343,7 +343,7 @@
                                     <xsl:text>/</xsl:text>
                                 </xsl:attribute>
                                 <img class="MIT-logo" src="https://cdn.libraries.mit.edu/files/branding/local/mitlib-wordmark.svg" alt="MIT Libraries logo" height="35"/>
-                                <span class="dspace-text">Dome</span>
+                                <span class="platform-name">Dome</span>
                             </a>
                         </h1>
                     </div>

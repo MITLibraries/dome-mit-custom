@@ -38,6 +38,15 @@
       max-height: 44px;
       max-width: 100%;
     }
+
+    .platform-name {
+      font-weight: normal;
+      font-size: 28px;
+
+      &:hover, &:focus {
+          text-decoration: none;
+      }
+    }
   }
 
   .link-logo-mit {
