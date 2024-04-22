@@ -599,6 +599,7 @@
                                         <span class="item"><a href="https://libraries.mit.edu/privacy" class="link-sub">Privacy</a></span>
                                         <span class="item"><a href="https://libraries.mit.edu/permissions" class="link-sub">Permissions</a></span>
                                         <span class="item"><a href="https://libraries.mit.edu/accessibility" class="link-sub">Accessibility</a></span>
+                                        <span class="item"><a href="https://libraries.mit.edu/contact" class="link-sub">Contact us</a></span>
                                     </nav>
                                 </div>
                             </div>
