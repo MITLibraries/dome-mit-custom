@@ -342,16 +342,14 @@
                                     <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
                                     <xsl:text>/</xsl:text>
                                 </xsl:attribute>
-                                <span class="sr">MIT Libraries home</span>
-                                <img class="MIT-logo" src="{$theme-path}/images/mitlib-wordmark.svg" alt="MIT Libraries logo"/>
+                                <img class="MIT-logo" src="https://cdn.libraries.mit.edu/files/branding/local/mitlib-wordmark.svg" alt="MIT Libraries logo" height="35"/>
                                 <span class="dspace-text">Dome</span>
                             </a>
                         </h1>
                     </div>
                     <div class="wrap-header-supp">
                         <a class="link-logo-mit" href="https://www.mit.edu">
-                            <span class="sr">MIT</span>
-                            <svg x="0" y="0" width="54" height="28" viewBox="0 0 54 28" enable-background="new 0 0 54 28" xml:space="preserve" class="logo-mit"><rect x="28.9" y="8.9" width="5.8" height="19.1" class="color"/><rect width="5.8" height="28"/><rect x="9.6" width="5.8" height="18.8"/><rect x="19.3" width="5.8" height="28"/><rect x="38.5" y="8.9" width="5.8" height="19.1"/><rect x="38.8" width="15.2" height="5.6"/><rect x="28.9" width="5.8" height="5.6"/></svg>
+                            <img src="https://cdn.libraries.mit.edu/files/branding/local/mit_logo_std_rgb_white.svg" alt="MIT" height="35"/>
                         </a>
                     </div>
                 </header>
@@ -586,9 +584,8 @@
                     <div class="footer-main" aria-label="MIT Libraries footer">
                         <div class="identity">
                             <div class="wrap-logo-lib">
-                                <a href="https://libraries.mit.edu" class="logo-mit-lib" alt="MIT Libraries Logo">
-                                    <span class="sr">MIT Libraries home</span>
-                                    <img src="{$theme-path}/images/mitlib-wordmark.svg" alt="MIT Libraries logo"/>
+                                <a href="https://libraries.mit.edu" class="logo-mit-lib">
+                                    <img src="https://cdn.libraries.mit.edu/files/branding/local/mitlib-wordmark.svg" alt="MIT Libraries" width="150"/>
                                 </a>
                             </div>
                             <div class="wrap-middle">
@@ -609,12 +606,8 @@
                 <div class="wrap-footer-institute">
                     <div class="footer-info-institute">
                         <a class="link-logo-mit" href="https://www.mit.edu">
-                            <span class="sr">MIT</span>
-                            <svg version="1.1" xmlns="https://www.w3.org/2000/svg" x="0" y="0" width="54" height="28" viewBox="0 0 54 28" enable-background="new 0 0 54 28" xml:space="preserve" class="logo-mit"><rect x="28.9" y="8.9" width="5.8" height="19.1" class="color"/><rect width="5.8" height="28"/><rect x="9.6" width="5.8" height="18.8"/><rect x="19.3" width="5.8" height="28"/><rect x="38.5" y="8.9" width="5.8" height="19.1"/><rect x="38.8" width="15.2" height="5.6"/><rect x="28.9" width="5.8" height="5.6"/></svg>
+                            <img src="https://cdn.libraries.mit.edu/files/branding/local/mit_lockup_std-three-line_rgb_white.svg" alt="MIT" width="150">
                         </a>
-                        <div class="about-mit">
-                            <span class="item">Massachusetts Institute of Technology</span>
-                        </div>
                         <div class="license">Content created by the MIT Libraries, <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a> unless otherwise noted. <a href="https://libraries.mit.edu/research-support/notices/copyright-notify/">Notify us about copyright concerns</a>.
                         </div><!-- end .footer-info-institute -->
                     </div>
