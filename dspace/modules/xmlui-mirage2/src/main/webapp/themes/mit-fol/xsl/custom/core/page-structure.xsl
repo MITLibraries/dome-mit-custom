@@ -594,16 +594,6 @@
                                 </a>
                             </div>
                             <div class="wrap-middle">
-                                <div class="wrap-sitemap">
-                                    <nav class="sitemap-libraries-abbrev" aria-label="MIT Libraries site menu">
-                                        <h2 class="sr">MIT Libraries navigation</h2>
-                                        <a class="item" href="https://libraries.mit.edu/search">Search</a>
-                                        <a class="item" href="https://libraries.mit.edu/hours">Hours &amp; locations</a>
-                                        <a class="item" href="https://libraries.mit.edu/borrow">Borrow &amp; request</a>
-                                        <a class="item" href="https://libraries.mit.edu/research-support">Research support</a>
-                                        <a class="item" href="https://libraries.mit.edu/about">About us</a>
-                                    </nav>
-                                </div><!-- end .links-all -->
                                 <div class="wrap-policies">
                                     <nav aria-label="MIT Libraries policy menu">
                                         <span class="item"><a href="https://libraries.mit.edu/privacy" class="link-sub">Privacy</a></span>

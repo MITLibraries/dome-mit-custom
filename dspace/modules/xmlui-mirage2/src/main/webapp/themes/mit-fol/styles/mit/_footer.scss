@@ -50,16 +50,6 @@
   }
 }
 
-// footer - adjustments for slim
-.wrap-footer.footer-slim {
-
-  .sitemap-libraries-abbrev a {
-    @extend .list-inline-pipe;
-    font-size: $fs-small;
-  }
-
-}
-
 // MIT footer
 .wrap-outer-footer-institute {
   background-color: $gray-d1;

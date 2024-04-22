@@ -259,14 +259,6 @@
 .wrap-footer {
   padding: 3.5rem 4%;
 
-  .wrap-sitemap {
-
-    // hide the sub menu items on small screens
-    .menu-sub {
-      display: none;
-    }
-  }
-
   .identity {
     margin-top: 4rem;
     margin-bottom: 2rem;
@@ -300,24 +292,8 @@
   // bigger than small mobile - able to handle columns ok
   @media (min-width: $bp-screen-md) {
 
-    .wrap-sitemap {
-      display: flex;
-      flex-direction: row;
-
-      .col {
-        margin-right: 3%;
-
-        &:last-child {
-          margin-right: 0;
-        } 
-      }
-
-      .menu-sub {
-        display: block;
-      }
-    }
-
     .identity {
+      align-items: flex-end;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -373,17 +349,6 @@
     .wrap-policies {
       align-self: flex-start; // This overrides the flex-end applicable to vertial alignment in full footer.
     }
-
-    .wrap-sitemap {
-      display: inline-block;
-      margin-bottom: 2rem;
-
-      .item {
-        display: block;
-        margin-right: 10px;
-        margin-bottom: 5px;
-      }
-    }
   }
 
 
@@ -397,26 +362,11 @@
         margin-left: 2%;
         order: 2;
       }
-
-      .wrap-sitemap {
-        display: inline-block;
-        margin-left: 2%;
-        margin-bottom: auto;
-        order: 1;
-
-        .item {
-          display: inline-block;
-          margin-bottom: auto;
-        }
-      }
     }
   }
 
   @media (min-width: $bp-screen-lg) {
     .wrap-policies {
-    }
-
-    .wrap-sitemap {
     }
   }
 }
