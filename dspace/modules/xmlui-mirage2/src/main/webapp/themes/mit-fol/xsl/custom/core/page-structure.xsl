@@ -606,7 +606,7 @@
                 <div class="wrap-footer-institute">
                     <div class="footer-info-institute">
                         <a class="link-logo-mit" href="https://www.mit.edu">
-                            <img src="https://cdn.libraries.mit.edu/files/branding/local/mit_lockup_std-three-line_rgb_white.svg" alt="MIT" width="150">
+                            <img src="https://cdn.libraries.mit.edu/files/branding/local/mit_lockup_std-three-line_rgb_white.svg" alt="MIT" width="150"/>
                         </a>
                         <div class="license">Content created by the MIT Libraries, <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a> unless otherwise noted. <a href="https://libraries.mit.edu/research-support/notices/copyright-notify/">Notify us about copyright concerns</a>.
                         </div><!-- end .footer-info-institute -->
