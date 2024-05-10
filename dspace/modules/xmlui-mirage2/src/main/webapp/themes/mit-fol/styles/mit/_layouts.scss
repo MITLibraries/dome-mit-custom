@@ -259,14 +259,6 @@
 .wrap-footer {
   padding: 3.5rem 4%;
 
-  .wrap-sitemap {
-
-    // hide the sub menu items on small screens
-    .menu-sub {
-      display: none;
-    }
-  }
-
   .identity {
     margin-top: 4rem;
     margin-bottom: 2rem;
@@ -276,12 +268,6 @@
     display: inline-block;
     vertical-align: bottom;
     margin: 0 20px 20px 0;
-  }
-
-  .wrap-social {
-    display: inline-block;
-    vertical-align: bottom;
-    margin-bottom: 20px;
   }
 
   .wrap-policies {
@@ -303,31 +289,11 @@
     }
   }
 
-  .wrap-social .text-find-us {
-    display: none;
-  }
-
   // bigger than small mobile - able to handle columns ok
   @media (min-width: $bp-screen-md) {
 
-    .wrap-sitemap {
-      display: flex;
-      flex-direction: row;
-
-      .col {
-        margin-right: 3%;
-
-        &:last-child {
-          margin-right: 0;
-        } 
-      }
-
-      .menu-sub {
-        display: block;
-      }
-    }
-
     .identity {
+      align-items: flex-end;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -335,8 +301,7 @@
     }
 
     .wrap-logo-lib, 
-    .wrap-policies, 
-    .wrap-social {
+    .wrap-policies {
       align-self: flex-end;
       margin-top: 0;
       margin-bottom: 0;
@@ -358,19 +323,10 @@
         margin-bottom: 0;
       }
     }
-
-    .wrap-social {
-      order: 3;
-      margin-left: auto;
-    }
   }
 
   // large screen - able to handle several inline items
   @media (min-width: $bp-screen-lg) {
-
-    .wrap-social {
-      order: 3;
-    }
 
     .wrap-policies {
       order: 2;
@@ -393,17 +349,6 @@
     .wrap-policies {
       align-self: flex-start; // This overrides the flex-end applicable to vertial alignment in full footer.
     }
-
-    .wrap-sitemap {
-      display: inline-block;
-      margin-bottom: 2rem;
-
-      .item {
-        display: block;
-        margin-right: 10px;
-        margin-bottom: 5px;
-      }
-    }
   }
 
 
@@ -417,30 +362,11 @@
         margin-left: 2%;
         order: 2;
       }
-
-      .wrap-sitemap {
-        display: inline-block;
-        margin-left: 2%;
-        margin-bottom: auto;
-        order: 1;
-
-        .item {
-          display: inline-block;
-          margin-bottom: auto;
-        }
-      }
-    }
-
-    .wrap-social {
-      order: 3;
     }
   }
 
   @media (min-width: $bp-screen-lg) {
     .wrap-policies {
-    }
-
-    .wrap-sitemap {
     }
   }
 }

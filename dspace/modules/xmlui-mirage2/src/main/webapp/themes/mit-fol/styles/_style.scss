@@ -21,6 +21,14 @@ $fa-font-path: "../node_modules/font-awesome/fonts";
 /* @import "atmire-cua"; */
 @import "most-popular-maps";
 
+// Override header and footer padding
+.wrap-header,
+.wrap-footer,
+.wrap-footer-institute {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .publication-records-modal, .publication-records-modal ul {
     list-style-type: none;
     padding-left: 0px;
@@ -140,17 +148,17 @@ div.fieldUpdate ul {
     }
 }
 
-.MIT-logo {
-    border-right: 1px white solid;
-    padding-right: 15px;
-    margin-right: 15px;
-}
-
-.dspace-text {
+.platform-name {
+    border-left: 1px solid white;
+    color: white;
     font-weight: normal;
     font-size: 28px;
+    margin-left: 20px;
+    padding-left: 20px;
+
     &:hover, &:focus {
-        text-decoration: none;
+        color: white;
+        text-decoration: underline;
     }
 }
 
