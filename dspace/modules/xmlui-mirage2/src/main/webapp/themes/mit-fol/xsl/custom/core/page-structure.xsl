@@ -340,13 +340,7 @@
                             <a class="logo-mit-lib" href="https://libraries.mit.edu/">
                                 <img src="https://cdn.libraries.mit.edu/files/branding/local/mitlib-wordmark.svg" alt="MIT Libraries logo" height="35"/>
                             </a>
-                            <a class="platform-name">
-                                <xsl:attribute name="href">
-                                    <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
-                                    <xsl:text>/</xsl:text>
-                                </xsl:attribute>
-                                Dome
-                            </a>
+                            <a class="platform-name" href="/">Dome</a>
                         </h1>
                     </div>
                     <div class="wrap-header-supp">

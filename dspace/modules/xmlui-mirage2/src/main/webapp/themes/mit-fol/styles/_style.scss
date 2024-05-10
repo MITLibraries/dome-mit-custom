@@ -157,7 +157,8 @@ div.fieldUpdate ul {
     padding-left: 20px;
 
     &:hover, &:focus {
-        text-decoration: none;
+        color: white;
+        text-decoration: underline;
     }
 }
 
